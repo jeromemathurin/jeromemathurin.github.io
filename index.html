@@ -9,82 +9,56 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<title>Jérôme Mathurin</title>
+<title><%@ include file="titre.jsp" %></title>
 </head>
-<body class="bodyBack">
+<body class="bodyBack" id="body">
 
 	<div class="container containerBack">
 		<div class="row">
 			<div class="col-md-12">
-			<img class="photoProfil img-circle img-responsive" src="images/photo_CV_Profil.jpg" alt="photo de profil" id="accueilProfil">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="navbar-toggler-icon"></span>
-					</button> <a class="navbar-brand" href="#quisuisje">Qui suis-je ?</a>
-					
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="navbar-nav">
-							<li class="nav-item active">
-								 <a class="nav-link" href="#veilleTechnologique">Veille Technologique</a>
-							</li>
-							<li class="nav-item">
-								 <a class="nav-link" href="#experienceTechnologique">Expériences professionnelles</a>
-							</li>
-							<li class="nav-item">
-								 <a class="nav-link" href="#mesFormations">Mes Formations</a>
-							</li>
-							<li class="nav-item dropdown">
-								 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Lien déroulant</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									 <a class="dropdown-item" href="#">action</a> <a class="dropdown-item" href="#">Une autre action</a> <a class="dropdown-item" href="#">Quelque chose d'autre ici</a>
-									<div class="dropdown-divider">
-									</div> <a class="dropdown-item" href="#">Lien séparé</a>
-								</div>
-							</li>
-						</ul>
-						<form class="form-inline">
-							<input class="form-control mr-sm-2" type="text" /> 
-							<button class="btn btn-primary my-2 my-sm-0" type="submit">
-								Chercher
-							</button>
-						</form>
-						<ul class="navbar-nav ml-md-auto">
-							<li class="nav-item active">
-								 <a class="nav-link" href="#">Relier <span class="sr-only">(courant)</span></a>
-							</li>
-							<li class="nav-item dropdown">
-								 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Lien déroulant</a>
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-									 <a class="dropdown-item" href="#">action</a> <a class="dropdown-item" href="#">Une autre action</a> <a class="dropdown-item" href="#">Quelque chose d'autre ici</a>
-									<div class="dropdown-divider">
-									</div> <a class="dropdown-item" href="#">Lien séparé</a>
-								</div>
-							</li>
-						</ul>
-					</div>
+				<img class="photoProfil img-responsive" src="images/photo_CV_Profil.jpg" alt="photo de profil" id="accueilProfil">
+				
+				<nav class="navbar navbar-expand-lg navbar-light bg-light container-flex">
+				  	<ul class="navbar-nav">
+	    				<li class="nav-item active">
+							<a class="nav-link" href="#quisuisje">Qui suis-je ?</a>
+						</li>
+	    				<li class="nav-item active">
+							<a class="nav-link" href="#veilleTechnologique">Veille Technologique</a>
+						</li>
+	    				<li class="nav-item active">
+							<a class="nav-link" href="#experienceTechnologique">Expériences professionnelles</a>
+						</li>
+	    				<li class="nav-item active">
+							<a class="nav-link" href="#mesFormations">Mes Formations</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#mesPassions">Mes Passions</a>
+						</li>
+					</ul>
 				</nav>
+				
 				<div class="jumbotron" id="quisuisje">
-					<h2>
-						Bonjour à toi!
+					<h2 class="h2">
+						Qui suis-je?
 					</h2>
+					<p>Bonjour à toi!</p>
 					<p>
 						Je suis Jérôme, fraîchement diplômé d’un titre de développeur Web et Web mobile dans le cadre d’une reconversion professionnelle. 
-						Après un métier qui m'a passionné durant des années comme chauffeur livreur, j'ai eu besoin de me lancer de nouveau défis.
-						J'avais besoin retourner à ma passion premiere les nouvelles technologies et l'informatique. L'E.N.I. Ecole informatique m'a permis de réaliser la formation de "Développeur Web et Web Mobile".
-						J'ai pu prendre conscience durant tous ces mois que j'étais dans mon élément et vraiment passionné par le développement. 
-						Faire parti d'un domaine professoinnel dynamique, en constante évolution et enrichissant est une opportunité.
+						Après un métier qui m'a épanoui durant des années comme chauffeur livreur, j'ai eu besoin de me lancer de nouveaux défis.
+						J'ai décidé de retourner à ma passion première, les nouvelles technologies et l'informatique. 
+						L'E.N.I. Ecole informatique m'a permis de devenir <span>"Développeur Web et Web Mobile"</span>.
+						J'ai pris prendre conscience durant tous ces mois que j'étais dans mon élément et vraiment passionné par le développement. 
+						Faire partie d'un domaine professionnel dynamique, enrichissant et en constante évolution est une opportunité.
 					</p>
-						<a href="#accueilProfil" class="btn btn-group-xs pull-right">Haut de page</a>
-					<!-- 				<p>
-						<a class="btn btn-primary btn-large" href="#">Apprendre encore plus</a>
-					</p> -->
+						<a href="#accueilProfil" class="btn btn-group-xs pull-right" id="topPage">&#9650; Haut de page</a>
+					
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-6" id="veilleTechnologique">
-				<h2>
+		<div class="row divpolic">
+			<div class="col-md-6 divPartie" id="veilleTechnologique">
+				<h2 class="h2">
 					veille technologique
 				</h2>
 				<h3>Mars 2021 - Aujourd'hui</h3>
@@ -95,30 +69,36 @@
 					Création de projet: Jeu du "Juste Prix", "Portfolio"(en cours)
 				</p>
 				<p>
-					<a href="#accueilProfil" class="btn btn-group-xs pull-right">Haut de page</a>
+					<a href="#accueilProfil" class="btn btn-group-xs pull-right" id="topPage">&#9650; Haut de page</a>
 					<!-- <a class="btn" href="#">Voir les détails "</a> -->
 				</p>
 			</div>
 			<div class="col-md-6">
 			</div>
 		</div>
-		<div class="row">
+		<div class="row divpolic">
 			<div class="col-md-6">
 			</div>
-			<div class="col-md-6" id="experienceTechnologique">
+			<div class="col-md-6 divPartieRight" id="experienceTechnologique">
 				<h2>
 					Expériences professionnelles
 				</h2>
 				<h3>         Mairie de Maisdon Sur Sèvre                 </h3>
 				<h3>Stage  | Jan 2021 - Fév 2021</h3>
 				<p>
-					Etude et développement d'un site fonctionnel en C.M.S. 
-	 www.maisdon-sur-sevre.fr
-	- Joomla
-	- Cloud O.V.H.
+					Etude et développement d'un site fonctionnel en C.M.S.
+				</p>		
+					<ul>
+						<li>Joomla</li>
+						<li>Cloud O.V.H.</li>
+					</ul>
+				<p>
+					<a href="http://www.maisdon-sur-sevre.fr/" class="btn btn-info" target="_blank">www.maisdon-sur-sevre.fr</a>
 				</p>
 				<p>
 					Développement d'un formulaire de voirie en php/Symfony
+				</p>
+				<p>
 					<a href="http://voirie.maisdon-sur-sevre.fr/" class="btn btn-info" target="_blank">Formulaire</a>
 				</p>
 				<ul>
@@ -128,27 +108,28 @@
 				<!-- <p>
 					<a class="btn" href="#">Voir les détails "</a>
 				</p> -->
-				
-				<h3>E.N.I. Ecole Informatique</h3>
-				<h3> Projets Effectués | Juil 2020 - Fév 2021</h3>
-				<p>
-					Développement d’une application web de vente aux enchères en Java EE
-				</p>
-				<ul>
-					<li>Langages utilisés : SQL, Java, HTML, CSS</li>
-					<li>Base de données : SQL Server</li>
-					<li>Framework utilisé : Boostrap</li>
-					<li>Serveur d’application : Tomcat</li>
-				</ul>
-				<p>
-					Etude et développement d’une application web de gestion des sorties en Symfony
-				</p>	
-				<ul>
-					<li>Outils utilisés : WAMP</li>
-					<li>Langages utilisés : SQL, PHP, HTML, CSS,JavaScript</li>
-					<li>Frameworks utilisés : Symfony, Angular</li>
-				</ul>				
-				
+				<div class="eniDiv">
+					<h3>E.N.I. Ecole Informatique</h3>
+					<h3> Projets Effectués | Juil 2020 - Fév 2021</h3>
+					<p>
+						Développement d’une application web de vente aux enchères en Java EE
+					</p>
+					<ul>
+						<li>Langages utilisés : <span>SQL, Java, HTML, CSS</span></li>
+						<li>Base de données : <span>SQL Server</span></li>
+						<li>Framework utilisé : <span>Boostrap</span></li>
+						<li>Serveur d’application : <span>Tomcat</span></li>
+					</ul>
+					<p>
+						Etude et développement d’une application web de gestion des sorties en Symfony
+					</p>	
+					<ul>
+						<li>Outils utilisés : <span>WAMP</span></li>
+						<li>Langages utilisés : <span>SQL, PHP, HTML, CSS,JavaScript</span></li>
+						<li>Frameworks utilisés : <span>Symfony, Angular</span></li>
+					</ul>				
+				</div>
+				<div class="eniDiv">
 				<h3>Stage Découverte en milieu Informatique</h3>
 				<p>
 					Capgemini | oct 2019
@@ -156,6 +137,8 @@
 				<p>
 					ATOS | oct 2019
 				</p>
+				</div>
+				<div class="eniDiv">
 				<h3>Chauffeur / Livreur</h3>
 				<p>
 					Transport Jardel | Jan 2017 - Juil 2019
@@ -163,11 +146,12 @@
 				<p>
 					Transport Douillard | Juil 2006 - Déc 2018
 				</p>
-				<a href="#accueilProfil" class="btn btn-group-xs pull-right">Haut de page</a>
+				</div>
+				<a href="#accueilProfil" class="btn btn-group-xs pull-right" id="topPage">&#9650; Haut de page</a>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-6" id="mesFormations">
+		<div class="row divpolic">
+			<div class="col-md-6 divPartie" id="mesFormations">
 				<h2>
 					Formations
 				</h2>
@@ -191,7 +175,7 @@
 				<p>
 					Bac STT informatique de Gestion | 2000 - 2002
 				</p>
-				<a href="#accueilProfil" class="btn btn-group-xs pull-right">Haut de page</a>
+				<a href="#accueilProfil" class="btn btn-group-xs pull-right" id="topPage">&#9650; Haut de page</a>
 				<!-- <p>
 					<a class="btn" href="#">Voir les détails "</a>
 				</p> -->
@@ -199,10 +183,10 @@
 			<div class="col-md-6">
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-6">
+		<div class="row divpolic">
+			<div class="col-md-6" id="mesPassions">
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 divPartieRight">
 				<h2>
 					Centres d'intérêt
 				</h2>
@@ -221,13 +205,12 @@
 					Informatique:
 					Sony Vegas pro 13 ( montage de mes vidéos sur le dessin).
 				</p>
-				<a href="#accueilProfil" class="btn btn-group-xs pull-right">Haut de page</a>
+				<a href="#accueilProfil" class="btn btn-group-xs pull-right" id="topPage">&#9650; Haut de page</a>
 			</div>
 		</div>
 	</div>
-	<footer>
-	
-	<a>&copy (date) Jérôme Mathurin</a> 
+	</body>
+	<footer class="footerFontSmall">
+		<a>&copy 2021 Jérôme Mathurin</a>
 	</footer>
-</body>
 </html>
