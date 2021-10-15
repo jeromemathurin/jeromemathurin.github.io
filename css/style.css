@@ -11,9 +11,17 @@ span{
 	text-indent: 50px;
 	text-align: justify;
 }
-
+#mairieMSD, #eni{
+	text-decoration:none;
+}
 #topPage{
 	margin-right:10px;
+}
+#youtube{
+	color: #FA4141;
+}
+#openclassroom{
+	color:#CE41FA;
 }
 h2{
 	text-align: center;
@@ -45,7 +53,10 @@ li {
 	line-height:100%;
 	font-size:20px;
 }
-
+.centerElement{
+	margin:auto;
+	text-align:center;
+}
 .photoProfil {
 	width: 150px;
 	border: 5px #80D0C7 inset;
@@ -58,7 +69,10 @@ li {
 	border-radius: 10px;
 	border-left:3px;
 }
-
+.footer{
+	margin: 15px;
+	padding: 3px;
+}
 #logoCapgemini {
 	width:110px;
 	height: 80px;
@@ -109,6 +123,50 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 36%, #ffffff 100%)
 	padding-top: 15px;
 }
 
+.divBordureDroite:hover{
+	margin: 15px;
+	margin-left:49%;
+	border-left: 4px outset #0093E9;
+	border-bottom: 4px outset #0093E9;
+	border-radius: 50px 5px 50px 5px;
+	background-color: #8EC5FC;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.divBordureGauche:hover{
+	margin: 15px;
+	border-right: 4px outset #0093E9;
+	border-bottom: 4px outset #0093E9;
+	border-radius: 5px 50px 5px 50px;
+	background-color: #8EC5FC;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.divBordureNiveau2:hover{
+	margin: 15px;
+	border-right: 4px outset #0093E9;
+	border-bottom: 4px outset #0093E9;
+	border-left: 4px ouset #C2FFD8;
+	border-top: 4px ouset #C2FFD8;
+	padding: 5px;
+	border-radius: 5px 5px 5px 5px;
+	background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+}
+.divBordureNiveau2:hover span{
+	color: white;
+}
+.titreNavBarre:hover{
+	margin: auto;
+	text-align: center;
+	color: #09214A;
+	background-color: #BBCEED;
+	border-radius: 5px 5px 5px 5px;
+}
+.divBordureNiveau2:hover #mairieMSD{
+	color: white;
+}
+.divBordureNiveau2:hover #eni{
+	color: white;
+}
 
 @media only screen and (max-width: 600px) {
   .divPartieRight{
@@ -128,6 +186,14 @@ background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 36%, #ffffff 100%)
 	.container-flex {
 		border-radius: 5px;
 	}
+	.divBordureDroite:hover{
+	margin: 15px;
+	border-left: 4px outset #0093E9;
+	border-bottom: 4px outset #0093E9;
+	border-radius: 50px 5px 50px 5px;
+	background-color: #8EC5FC;
+	background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
 	h2{
 	text-align: center;
 	padding-top: 20px;
